@@ -78,3 +78,7 @@ html{
                 .info{
                     font-weight: bold;
                 }
+    
+        .moved{
+            transform: rotateX(50deg);
+        }
