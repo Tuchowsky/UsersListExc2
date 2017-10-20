@@ -50,3 +50,31 @@ html{
                 border: 1px solid rgba(215, 216, 218, 0.7);  
                 transform: translate(50%, -50%);
             }
+
+            .user-name{
+                left: 10%;
+                top: -15%;
+                background-color:#afb2b7;
+                box-sizing: border-box;
+                padding: 6px 20px;
+                border-radius: 3px;
+                border: 1px solid rgba(38, 37, 38, 0.7);
+                font-size: 18px;
+            }
+
+                .user-container > div{
+                    position: absolute;
+                    left: 10%;
+                }
+
+                .user-tel{
+                    top: 30%;
+                }
+                
+                .user-age{
+                    top: 60%;
+                }
+
+                .info{
+                    font-weight: bold;
+                }
