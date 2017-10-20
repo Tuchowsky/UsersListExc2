@@ -10,3 +10,13 @@ html{
     font-family: Lato, sans-serif;
     color: #f3f3f3;
 }
+
+    .user-data{
+        position: absolute;
+        left: 50%;
+        top: 40%;
+        width: 300px;
+        min-height: 185px;
+        transform: translate(-50%);
+        background: rebeccapurple;
+    }
