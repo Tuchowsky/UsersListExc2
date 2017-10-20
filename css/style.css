@@ -18,5 +18,35 @@ html{
         width: 300px;
         min-height: 185px;
         transform: translate(-50%);
-        background: rebeccapurple;
     }
+
+        .user-container{
+            position: absolute;
+            width: 100%;
+            min-height: 110px;
+            box-sizing: border-box;
+            border-radius: 4px;
+            background-color: rgba(127, 128, 132, 0.9);
+            border: 1px solid rgba(38, 37, 38, 0.7);
+            transform: translate(0, -85%);
+            transition: 1.5s;
+            z-index: 0;
+        }
+
+            .user-container > span{
+                position: absolute;
+            }
+
+            .user-number{
+                width: 40px;
+                height: 40px;
+                right: 12px;
+                top: 12px; 
+                border-radius: 50%;
+                background-color: rgba(38, 37, 38, 1);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border: 1px solid rgba(215, 216, 218, 0.7);  
+                transform: translate(50%, -50%);
+            }
