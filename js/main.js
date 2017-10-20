@@ -22,4 +22,18 @@ $(document).ready(function(){
     }
     ];
 
+    let button = $('.btn');
+    let userMainContainer = $('.main-container');
+
+    button.click(function(){
+        let $this = $(this);
+        $this.toggleClass('button-open');
+
+        if($this.hasClass('button-open')){
+            $this.text('Hide Users Data');
+        } else {
+            $this.removeClass('button-open');
+            $this.text('Show Users Data');
+        }
+    });
 });
