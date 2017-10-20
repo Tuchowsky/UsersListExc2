@@ -31,9 +31,30 @@ $(document).ready(function(){
 
         if($this.hasClass('button-open')){
             $this.text('Hide Users Data');
+
+            for(var i = users.length-1; i >= 0; i--){
+                //console.log(users[i]);
+                userMainContainer.append(`
+                <div class="user-container">  
+                    <span class="user-number info">${i + 1}</span>
+                    <span class="user-name">${users[i].name}</span>
+                    
+                    <div class="user-tel">
+                        <span class="info">Telephone:</span>
+                        <span>${users[i].phone}</span> 
+                          </div>
+                    
+                    <div class="user-age">
+                        <span class="user-age info">Age:</span>
+                        <span class="user-age">${users[i].age}</span>
+                    </div>
+                </div>
+                `);
+            }
         } else {
             $this.removeClass('button-open');
             $this.text('Show Users Data');
+            $('div.user-container').remove();
         }
     });
 });
