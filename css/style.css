@@ -85,10 +85,11 @@ html{
 
         .btn {
             position: absolute;
-            top: -130%;
-            left: -85%;
-            background-color: #4CAF50;
+            top: -180%;
+            left: 22%;
+            background-color: rgba(38, 37, 38, 0.7);
             border: none;
+            border-radius: 2px;
             color: white;
             padding: 15px 32px;
             text-align: center;
