@@ -51,6 +51,21 @@ $(document).ready(function(){
                 </div>
                 `);
             }
+
+            let userContainer = $('.user-container');
+            let click = 0;
+            userContainer.click(function(){
+                clickCount = 0;
+                click++;
+                if(clickCount === 0){
+                    $(this).toggleClass('moved').css({'z-index': `${click}`});
+                    clickCount++;
+                } else if(clickCount === 1){
+                    $(this).removeClass('moved').css({'transform': 'rotateX(0deg)'});
+                    clickCount--;
+                }
+            });
+
         } else {
             $this.removeClass('button-open');
             $this.text('Show Users Data');
