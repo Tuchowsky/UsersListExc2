@@ -60,10 +60,11 @@ $(document).ready(function(){
                 if(clickCount === 0){
                     $(this).toggleClass('moved').css({'z-index': `${click}`});
                     clickCount++;
-                } else if(clickCount === 1){
-                    $(this).removeClass('moved').css({'transform': 'rotateX(0deg)'});
-                    clickCount--;
-                }
+                } 
+                //else if(clickCount === 1){
+                // $(this).removeClass('moved').css({'transform': 'rotateX(0deg)'});
+                // clickCount--;
+                //}
             });
 
         } else {
